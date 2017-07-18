@@ -59,9 +59,9 @@ def newgame():
         unpause()
     try:
         disknumber = int(e.get())
-        if disknumber > 15:
-            disknumber = 15
-            update_e(15)
+        if disknumber > 13:
+            disknumber = 13
+            update_e(13)
     except ValueError:
         disknumber = 5
         update_e(5)
@@ -81,3 +81,4 @@ e.pack(side = LEFT)
 
 frame.pack()
 
+mainloop()
